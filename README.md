@@ -5,8 +5,8 @@
 ### Visualizar projeto 😁👉 [lest_food](http://localhost:3000)
 
 <p style="font-size:16px;padding:0px 25px 10px">
-    Projeto: para mostrar listar o cardapio de um restaurante fest Food,
-    com varias opções incluido entrada, com area de feedback e contato.
+    Projeto: para mostrar cardapio de um restaurante fest Food,
+    com varias opções incluido tipos de serviços, com area de feedback e contato.
 </p>
 
 <p style="font-size:18px;padding:0px 25px 10px">Stack. React/Next.js 13.5, typescript, Tailwind, Swiper, figman da comunidade 
