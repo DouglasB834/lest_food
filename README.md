@@ -2,7 +2,7 @@
 
 <div style="display:flex;justify-content:center"><img style="width:250px" src="./public/assets/lestFood_page.png" /></div>
 
-### Visualizar projeto 😁👉 [lest_food](http://localhost:3000)
+### Visualizar projeto 😁👉 [lest_food](https://lest-food.vercel.app/)
 
 <p style="font-size:16px;padding:0px 25px 10px">
     Projeto: para mostrar cardapio de um restaurante fest Food,
