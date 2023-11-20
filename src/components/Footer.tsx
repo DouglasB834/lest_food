@@ -1,11 +1,14 @@
 import { dataFooter } from "@/utils/dataFooter";
 import Image from "next/image";
 import React from "react";
+import Ellipse12 from "../../public/assets/Ellipse12.png";
+import Ellipse11 from "../../public/assets/Ellipse11.png";
+import Ellipse13 from "../../public/assets/Ellipse13.png";
 
 export const Footer = () => {
   return (
-    <footer className="container ">
-      <div className="flex justify-between items-center flex-wrap gap-4 p-4 mb-4 border-b-4 ">
+    <footer className="container  relative ">
+      <div className="h-[250px] flex justify-between items-center flex-wrap gap-4 pb-4  my-4 border-y-4  ">
         {dataFooter.map((item, i) => (
           <div key={i} className="">
             {item.description?.map((item, i) => (
@@ -24,7 +27,7 @@ export const Footer = () => {
 
             {item.company?.map((item, i) => (
               <ul key={i}>
-                <h3>{item.title}</h3>
+                <h3 className="font-semibold text-lg ">{item.title}</h3>
                 {item.texts?.map((item, i) => (
                   <li key={i}> {item} </li>
                 ))}
@@ -34,7 +37,7 @@ export const Footer = () => {
             <ul>
               {item.Policy?.map((item, i) => (
                 <ul key={i}>
-                  <h3>{item.title}</h3>
+                  <h3 className="font-semibold text-lg ">{item.title}</h3>
                   {item.texts?.map((item, i) => (
                     <li key={i}> {item} </li>
                   ))}
@@ -50,6 +53,21 @@ export const Footer = () => {
           </div>
         ))}
       </div>
+      <Image
+        src={Ellipse12}
+        alt="Ellipse bg"
+        className="absolute right-3 top-2  z-[-1]"
+      />
+      <Image
+        src={Ellipse11}
+        alt="Ellipse bg"
+        className="absolute right-[35%] bottom-9  z-[-1]"
+      />
+      <Image
+        src={Ellipse13}
+        alt="Ellipse bg"
+        className="absolute left-[38%] top-16  z-[-1]"
+      />
     </footer>
   );
 };

@@ -13,18 +13,18 @@ export const Header = () => {
     setOpenMenu(!openMenu);
   };
   return (
-    <header className="w-full   h-[80px] flex gap-4 justify-between items-center  bg-primaryColorBg text-black  container ">
+    <header className="w-full  fixed z-10  h-[80px] flex gap-4 justify-between items-center  bg-primaryColorBg text-black px-4 ">
       <a href="/">
         <Image src={logo} alt="Logo" />
       </a>
 
       {openMenu && (
-        <nav className="absolute z-10 md:hidden right-0  top-14  w-[140px] bg-primary flex flex-col items-center rounded-l-[1rem]">
+        <nav className="fixed z-10 md:hidden right-0  top-14  w-[140px] bg-primary flex flex-col items-center rounded-l-[1rem]">
           <ul className="flex flex-col  w-[100%]  text-black text-[.95rem] font-bold  items-center ">
             {dataOptionMenu.map((items, i) => (
               <li
                 key={i}
-                className="flex items-center justify-center w-full h-[39px] hover:bg-amber-400"
+                className="flex items-center justify-center w-full h-[39px] hover:bg-amber-400 last:border-b-[1px] border-b-primaryColorBg"
               >
                 <a
                   className="hover:text-white transition-all"
@@ -57,7 +57,7 @@ export const Header = () => {
 
       <button
         aria-label="button menu"
-        className="md:hidden text-[2.1rem] text-amber-600 hover:text-slate-500"
+        className="md:hidden text-[2.1rem] text-amber-600 hover:text-slate-500 fixed right-2 z-10"
         onClick={handleMenu}
       >
         {openMenu ? <MdRestaurantMenu /> : <RiMenuSearchFill />}

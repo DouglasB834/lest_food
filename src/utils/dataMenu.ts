@@ -20,8 +20,8 @@ export const dataOptionMenu: IDataOptionManu[] = [
     id: "about",
     title: "About",
   },
-  // {
-  //   id: "contact",
-  //   title: "Contact",
-  // },
+  {
+    id: "contact",
+    title: "Contact",
+  },
 ];

@@ -1,5 +1,5 @@
 import pessoa1 from "../../public/assets/pessoa1.jpg";
-import pessoa2 from "../../public/assets/feddback1.png";
+import pessoa2 from "../../public/assets/pessoa2.png";
 import pessoa3 from "../../public/assets/pessoa3.png";
 import pessoa4 from "../../public/assets/pessoa1.jpg";
 import { StaticImageData } from "next/image";

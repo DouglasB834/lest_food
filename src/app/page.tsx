@@ -9,12 +9,13 @@ import { FeedBack } from "@/components/FeedBack";
 
 import { BannerFooter } from "@/components/BannerFooter";
 import { Footer } from "@/components/Footer";
+import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
-    <div className="">
+    <main>
       <Header />
-      <div className="relative">
+      <div className="relative pt-[80px]">
         <Banner />
         <Image
           src={Rectangle}
@@ -32,13 +33,13 @@ export default function Home() {
         id="howItWorks"
         className="py-[5rem] bg-white flex flex-col gap-[2rem] "
       >
-        <WeServe />
         <OurMenu />
+        <WeServe />
         <FeedBack />
         <BannerFooter />
       </main>
-      {/* <Email /> */}
+      <Contact />
       <Footer />
-    </div>
+    </main>
   );
 }
